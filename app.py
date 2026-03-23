@@ -151,21 +151,21 @@ patches = []
 
 # Speed limit patches
 if st.checkbox('Speed Limit Sport (SLS)'):
-    sls_speed = st.slider("Max Speed (SLS)", 1.0, 35.0, 25.0, 0.1)
+    sls_speed = st.slider("Max Speed (SLS)", 1.0, 60.0, 25.0, 0.1)
     patches.append(f'sls={sls_speed}')
 
 if st.checkbox('Speed Limit Drive (SLD)'):
-    sld_speed = st.slider("Max Speed (SLD)", 1.0, 35.0, 15.0, 0.1)
+    sld_speed = st.slider("Max Speed (SLD)", 1.0, 60.0, 15.0, 0.1)
     patches.append(f'sld={sld_speed}')
 
 if scooter_model in ['mi5elite']:
     if st.checkbox('Speed Limit Pedestrian (SLP)'):
-        slp_speed = st.slider("Max Speed (SLP)", 1.0, 35.0, 6.0, 0.1)
+        slp_speed = st.slider("Max Speed (SLP)", 1.0, 60.0, 6.0, 0.1)
         patches.append(f'slp={slp_speed}')
 
 if scooter_model in ['mi4', 'ultra4']:
     if st.checkbox('Dashboard Max Speed (DMS)'):
-        dms_speed = st.slider("Max Speed (DMS)", 1.0, 29.6, 22.0, 0.1)
+        dms_speed = st.slider("Max Speed (DMS)", 1.0, 60.0, 22.0, 0.1)
         patches.append(f'dms={dms_speed}')
 
 if scooter_model not in ["mi4pro2nd", "mi5pro", "mi5elite"]:
