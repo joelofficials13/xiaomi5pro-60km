@@ -1,0 +1,16 @@
+[theme]
+base="dark"
+primaryColor="#4CAF50"               # accent green for buttons/highlights
+backgroundColor="#0E0E0E"            # very dark background
+secondaryBackgroundColor="#1A1A1A"   # slightly lighter for cards/sidebar
+textColor="#E8E8E8"                  # bright text for readability
+font="sans serif"                    # modern sans-serif font
+
+[server]
+maxUploadSize = 50                   # max upload size in MB
+
+[browser]
+gatherUsageStats = false
+
+[runner]
+magicEnabled = false                 # disable magic commands for cleaner experience
